@@ -29,7 +29,7 @@ body{
     position: relative; /*Relative positioning is required for the pseudo-element we will create since it will have position of absolute. */
 }
 .link::after{
-    content: ''; /*Content property must be set else this element will no show up on the page. */
+    content: ''; /*Content property must be set else this element will not show up on the page. */
     width: 100%;
     height: 1px;
     background-color: #fed86b;
