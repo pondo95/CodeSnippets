@@ -37,18 +37,18 @@ body{
     position: absolute;
     top: 0;
     left: -50px;
-    width: 0;
+    width: 150%;
     height: 100%;
     background-color: #fff;
-    transform: skewX(35deg);
+    transform: scaleX(0) skewX(35deg);
+    transform-origin: left;
     z-index: -1;
-    transition: width 1s;
+    transition: transform 1s;
 }
 
 .button:hover::before{
-    width: 150%;
+    transform: scaleX(1) skewX(35deg);
 }
-
 /* 
     Note: If I don't mention a property/properties it means that they are self explanatory.
 
