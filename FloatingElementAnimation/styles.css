@@ -33,7 +33,7 @@ body{
 .icon{
     display: inline-block; /*Makes the icons inline block level elements. This will let us animate the transform property.*/ 
     font-size: 44px;
-    animation: float 0s ease-in-out infinite; /*Applies the float keyframe animation over 5s and makes it run infinitely.*/
+    animation: float 3s ease-in-out infinite; /*Applies the float keyframe animation over 5s and makes it run infinitely.*/
 }
 
 /*
