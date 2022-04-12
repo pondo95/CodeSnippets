@@ -8,6 +8,7 @@ body{
 /* General styles end */
 
 .button{
+    display: inline-block;
     text-decoration: none;
     font-size: 25px;
     color: #1fe8b6;
