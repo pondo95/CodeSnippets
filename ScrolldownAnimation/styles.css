@@ -1,0 +1,58 @@
+/* ======================== */
+/* 
+    Ignore the following styles. They are not important to achieve the effect.
+    I'm only using them for looks (overall page background/font styles/centering content).
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #4419a8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* ======================== */
+
+.mouse {
+    width: 25px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    display: flex;
+    /*This is used here for aligning the mouse wheel in the middle of the mouse container. We could use align items and justify content center here,
+    but in this situation it's easier to do a margin of auto on the mouse wheel itself and it will do the same thing with one less line of css.*/
+}
+
+.mouse-wheel {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: auto;
+    /*Centers the mouse wheel vertically and horizontally (because of help from display: flex on the mouse).*/
+    animation: move-wheel 1s linear infinite;
+}
+
+/* Here at the start of the animation the mouse wheel will have an opacity of 0 and it will be moved up. At the end the opacity is 1 and it is moved down */
+@keyframes move-wheel {
+    0% {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(1rem);
+    }
+}
