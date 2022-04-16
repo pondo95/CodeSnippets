@@ -1,2 +1,2 @@
 ## Parallax scroll animation
-![Project thumbnail](./thumbnail.jpg)
+![Project thumbnail](./thumbnail.png)
