@@ -1,2 +1,2 @@
 ## Button hover animation
-![Project thumbnail](./thumbnail.jpg)
+![Project thumbnail](./thumbnail.png)
