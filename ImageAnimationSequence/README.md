@@ -1,2 +1,2 @@
-## Card 3D flip animation
+## Image animation sequence
 ![Project thumbnail](./thumbnail.png)
