@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple modal animation</title>
+    <!-- Remix icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Link to your stylesheet -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <button class="toggle-modal">Open modal</button>
+    <div class="modal-container">
+      <div class="modal"></div>
+    </div>
+
+    <script>
+      const buttonEl = document.querySelector("button");
+      const modalEl = document.querySelector(".modal-container");
+
+      const openModal = () => {
+        modalEl.classList.add("open");
+      };
+      const closeModal = (e) => {
+        if (e.target.classList.contains("open"))
+          modalEl.classList.remove("open");
+      };
+
+      buttonEl.addEventListener("click", openModal);
+      window.addEventListener("click", closeModal);
+    </script>
+  </body>
+</html>
