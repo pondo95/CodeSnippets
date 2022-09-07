@@ -26,6 +26,7 @@ figure {
     background-color: #000;
     overflow: hidden;
 }
+
 figure figcaption::before {
     content: "";
     position: absolute;
@@ -33,13 +34,14 @@ figure figcaption::before {
     border: 2px solid #fff;
     opacity: 0;
     scale: 1.25;
-    transition: opacity 0.25s,
-    scale 0.25s;
+    transition: opacity 0.25s, scale 0.25s;
 }
+
 figure:hover figcaption::before {
     opacity: 1;
     scale: 1;
 }
+
 figure img {
     position: relative;
     display: block;
@@ -48,9 +50,9 @@ figure img {
     object-fit: cover;
     opacity: 0.85;
     scale: 1.15;
-    transition: opacity 0.25s,
-    scale 0.35s;
+    transition: opacity 0.25s, scale 0.35s;
 }
+
 figure:hover img {
     opacity: 0.5;
     scale: 1;
@@ -78,8 +80,7 @@ figure p {
     font-size: 14px;
     opacity: 0;
     translate: -25px;
-    transition: opacity 0.25s,
-    translate 0.25s;
+    transition: opacity 0.25s, translate 0.25s;
 }
 
 figure:hover p {
