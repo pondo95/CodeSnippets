@@ -1,0 +1,80 @@
+/* Reset/Base - IGNORE */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #0f172a;
+    /* Local font */
+    font-family: Poppins;
+    color: #fff;
+}
+/* Reset/Base - IGNORE */
+
+/* Effect styles */
+.banner {
+    position: relative;
+    width: 400px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    animation: animIn 0.5s forwards, animOut 0.5s forwards 2s;
+}
+
+.images {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    background: url("./memoji.jpg") center no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.app {
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    width: 20px;
+}
+
+.title{
+    font-weight: 500;
+}
+
+.message {
+    font-weight: 300;
+}
+
+.timestamp {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+@keyframes animIn {
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        translate: 0 20px;
+    }
+}
+@keyframes animOut {
+    100% {
+        translate: 0 -20px;
+        opacity: 0;
+    }
+}
